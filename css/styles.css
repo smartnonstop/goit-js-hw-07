@@ -1,0 +1,58 @@
+
+
+img {
+  max-width: 100%;
+}
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#gallery li {
+  width: 30%;
+  padding: 5px;
+}
+
+#counter {
+  padding: 10px;
+  margin: 0 auto;
+  width: 200px;
+  border: 1px solid grey;
+  text-align: center;
+}
+
+#task5, #task6, #task7 {
+  width: 800px;
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid grey;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+
+#task8 {
+  width: 1100px;
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid grey;
+  text-align: center;
+}
