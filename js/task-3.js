@@ -20,17 +20,10 @@ const images = [
 
 const gallery = document.querySelector('#gallery');
 
-const imageElements = images.map(image => {
-  
-  const liElem = document.createElement('li');
-  const imageElem = document.createElement('img');
-  imageElem.setAttribute('src', image.url);
-  imageElem.setAttribute('alt', image.alt);
 
-  liElem.append(imageElem);
+const imageElementsStr = images.reduce((acc, image) => {
+  return acc += `<li><img src="${image.url}" alt="${image.alt}"></li>`;
+}, '');
 
-  return liElem;
 
-});
-
-gallery.append(...imageElements);
+gallery.insertAdjacentHTML('beforeend', imageElementsStr);
